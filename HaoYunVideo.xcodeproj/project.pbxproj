@@ -275,7 +275,6 @@
 		052AD02123979E3700C64F36 /* HYCommon */ = {
 			isa = PBXGroup;
 			children = (
-				057EE9D6239D365000828DB0 /* MPFConmonUtil */,
 				057EE9CC239D355200828DB0 /* MPFCustomTabbarFiles */,
 				052AD02223979E3700C64F36 /* MPFBaseFiles */,
 			);
@@ -414,13 +413,6 @@
 				057EE9CD239D356100828DB0 /* TPCTabBarItem.m */,
 			);
 			path = MPFCustomTabbarFiles;
-			sourceTree = "<group>";
-		};
-		057EE9D6239D365000828DB0 /* MPFConmonUtil */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MPFConmonUtil;
 			sourceTree = "<group>";
 		};
 		059161782498F93500345F80 /* 可变数组和字典转化 */ = {
