@@ -1,0 +1,35 @@
+{
+  "name": "MPBPlayer",
+  "version": "1.0.1",
+  "summary": "项目简介",
+  "license": "MIT",
+  "homepage": "http://git2.yixia.com/fandongdong/MPBPlayer",
+  "source": {
+    "git": "https://gitee.com/hao-yun/MPBPlayer.git",
+    "tag": "1.0.1"
+  },
+  "source_files": "MPBPlayer/Classes/**/*",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  },
+  "authors": {
+    "fandongdong": "fandongdong@yixia.com"
+  },
+  "social_media_url": "git2.yixia.com/fandongdong/MPBPlayer",
+  "subspecs": [
+    {
+      "name": "MPBPlayer",
+      "source_files": "MPBPlayer/Classes/MPBVideoPlayrBaseFiles/*.{h,m}"
+    }
+  ]
+}
