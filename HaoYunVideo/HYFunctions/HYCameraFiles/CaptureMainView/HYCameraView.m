@@ -17,6 +17,7 @@
 
 @property (nonatomic) HYCaptureManager *captureManager;
 
+@property (nonatomic,strong)UIView * cameraParentView;
 
 
 @end
@@ -89,24 +90,34 @@
             HYCaptureManager *manager = [[HYCaptureManager alloc] init];
             self.captureManager = manager;
             self.captureManager.captureType = CaptureManagerTypeSummerHomework;
-            [self.captureManager configureWithParentLayer:self previewRect:CGRectMake(0, 0,MPT_ScreenW, MPT_ScreenH) withVideoOrientation:AVCaptureVideoOrientationPortrait isFrontCamera:NO detectEnvBrightness:^(CGFloat brightness)
-            {
+            [self.captureManager configureWithParentLayer:self.cameraParentView previewRect:CGRectMake(0, 0,MPT_ScreenW, MPT_ScreenH) withVideoOrientation:AVCaptureVideoOrientationPortrait isFrontCamera:NO detectEnvBrightness:^(CGFloat brightness)
+             {
                 NSLog(@"brightness = %f",brightness);
             }];
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                 [self.captureManager.session startRunning];
+                [self.captureManager.session startRunning];
             });
         }
-     }];
-    
-
+    }];
     
     
+    
+    
+    [self addSubview:self.cameraParentView];
     [self addSubview:self.takePhoto];
-    self.takePhoto.bottom = self.bottom-44;
-    [self.takePhoto addTarget:self action:@selector(takePhotoClick:) forControlEvents:UIControlEventTouchUpInside];
+     self.takePhoto.bottom = self.bottom-44;
+     [self.takePhoto addTarget:self action:@selector(takePhotoClick:) forControlEvents:UIControlEventTouchUpInside];
     
-    
+}
+
+-(UIView *)cameraParentView
+{
+    if (!_cameraParentView)
+    {
+        _cameraParentView = [[UIView alloc]initWithFrame:self.bounds];
+        _cameraParentView.backgroundColor = [UIColor blackColor];
+    }
+    return _cameraParentView;;
 }
 
 

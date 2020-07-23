@@ -147,7 +147,7 @@
 - (void)delegate_demo
 {
     NSArray * array = [[NSArray alloc]init];
-    [array mutableArrayDeeoCopy];
+    [array mutableArrayDeepCopy];
 }
 
 

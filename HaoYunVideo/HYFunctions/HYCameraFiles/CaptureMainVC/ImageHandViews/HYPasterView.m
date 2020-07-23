@@ -140,6 +140,7 @@
     [self addSubview:scaleImageView];
     self.scaleImageView = scaleImageView;
     
+    //==============================================
     self.pasterImageView.frame = CGRectMake(paster_insert_space, paster_insert_space, defaultImageViewW_H, defaultImageViewW_H);
     
     self.delegateImageView.frame = CGRectMake(0, 0, btnW_H, btnW_H);

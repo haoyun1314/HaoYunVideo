@@ -22,6 +22,7 @@
 #import "MPTValidObject.h"
 
 
+
 /// 屏幕尺寸 比率
 #define MPT_ScreenB [UIScreen mainScreen].bounds
 #define MPT_ScreenH ([UIScreen mainScreen].bounds.size.height)

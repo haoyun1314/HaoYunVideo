@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		050131B724A84648007D5059 /* AVAudioPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 050131B624A84648007D5059 /* AVAudioPlayerVC.m */; };
+		051377B024C690B70056983C /* piao.png in Resources */ = {isa = PBXBuildFile; fileRef = 051377AC24C690B60056983C /* piao.png */; };
+		051377B124C690B70056983C /* scanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 051377AD24C690B60056983C /* scanLine@2x.png */; };
+		051377B224C690B70056983C /* scanFlashlight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 051377AE24C690B70056983C /* scanFlashlight@3x.png */; };
+		051377B324C690B70056983C /* scanFlashlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 051377AF24C690B70056983C /* scanFlashlight@2x.png */; };
+		051377B924C6913A0056983C /* WSLNativeScanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 051377B624C6913A0056983C /* WSLNativeScanTool.m */; };
+		051377BA24C6913A0056983C /* WSLScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 051377B824C6913A0056983C /* WSLScanView.m */; };
 		052AD02923979E3700C64F36 /* MPBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052AD02323979E3700C64F36 /* MPBViewController.m */; };
 		052AD02B23979E3700C64F36 /* MPBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052AD02823979E3700C64F36 /* MPBNavigationController.m */; };
 		052D69DC2046525300479665 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052D69DB2046525300479665 /* CoreGraphics.framework */; };
@@ -22,8 +28,12 @@
 		053DC125239FC45100CE06A0 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC11D239FC45000CE06A0 /* UIColor+Hex.m */; };
 		053DC126239FC45100CE06A0 /* JZBAccessPermissionManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC11E239FC45000CE06A0 /* JZBAccessPermissionManger.m */; };
 		053DC127239FC45100CE06A0 /* HYSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC120239FC45000CE06A0 /* HYSelectView.m */; };
+		05531AEF24C9344A00D2419C /* AVFoundation基础概念.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */; };
 		05536C9223AC7CC600CB5F51 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 05536C9123AC7CC600CB5F51 /* 3.png */; };
 		05536C9523AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 05536C9423AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m */; };
+		055B217324C70E0A00532308 /* HYCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 055B217124C70E0A00532308 /* HYCodeScanVC.m */; };
+		056A76C924BD5C1C00483BB3 /* HYGradeSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 056A76C824BD5C1C00483BB3 /* HYGradeSelectModel.m */; };
+		056A76CC24BDACE400483BB3 /* UIFont+JZBNFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 056A76CB24BDACE400483BB3 /* UIFont+JZBNFont.m */; };
 		056B5BC3249CAC9C000E09B4 /* AVAssetWriteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B5BC1249CAC9C000E09B4 /* AVAssetWriteManager.m */; };
 		056B5BC6249CACC5000E09B4 /* XCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 056B5BC5249CACC5000E09B4 /* XCFileManager.m */; };
 		056D62492498A6A6007BA6A3 /* HYPasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D62472498A6A5007BA6A3 /* HYPasterView.m */; };
@@ -38,6 +48,9 @@
 		057EEA20239D3C2600828DB0 /* MPFHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EEA1F239D3C2600828DB0 /* MPFHomeVC.m */; };
 		057EEA26239D3D4400828DB0 /* MPTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EEA25239D3D4400828DB0 /* MPTViewController.m */; };
 		057EEA38239D420E00828DB0 /* MPFCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EEA37239D420E00828DB0 /* MPFCaptureVC.m */; };
+		05808A3F24BC35BB0088D9B8 /* HYBottomShowSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05808A3D24BC35BB0088D9B8 /* HYBottomShowSelectView.m */; };
+		05808A4124BC5C8F0088D9B8 /* grade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 05808A4024BC5C8F0088D9B8 /* grade.txt */; };
+		058C505524C82E530013F1CC /* HYAVFoundationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 058C505424C82E530013F1CC /* HYAVFoundationVC.m */; };
 		059161742498F62800345F80 /* MutableCopyCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 059161722498F62800345F80 /* MutableCopyCategory.m */; };
 		05A95A052499C99E008A28CA /* LFSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A95A042499C99E008A28CA /* LFSpeechViewController.m */; };
 		05ADF3842043F4FB00CCECA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ADF3832043F4FB00CCECA2 /* AppDelegate.m */; };
@@ -97,6 +110,14 @@
 /* Begin PBXFileReference section */
 		050131B524A84648007D5059 /* AVAudioPlayerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVAudioPlayerVC.h; sourceTree = "<group>"; };
 		050131B624A84648007D5059 /* AVAudioPlayerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVAudioPlayerVC.m; sourceTree = "<group>"; };
+		051377AC24C690B60056983C /* piao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = piao.png; sourceTree = "<group>"; };
+		051377AD24C690B60056983C /* scanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanLine@2x.png"; sourceTree = "<group>"; };
+		051377AE24C690B70056983C /* scanFlashlight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanFlashlight@3x.png"; sourceTree = "<group>"; };
+		051377AF24C690B70056983C /* scanFlashlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanFlashlight@2x.png"; sourceTree = "<group>"; };
+		051377B524C6913A0056983C /* WSLScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLScanView.h; sourceTree = "<group>"; };
+		051377B624C6913A0056983C /* WSLNativeScanTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLNativeScanTool.m; sourceTree = "<group>"; };
+		051377B724C6913A0056983C /* WSLNativeScanTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLNativeScanTool.h; sourceTree = "<group>"; };
+		051377B824C6913A0056983C /* WSLScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLScanView.m; sourceTree = "<group>"; };
 		052AD02323979E3700C64F36 /* MPBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPBViewController.m; sourceTree = "<group>"; };
 		052AD02523979E3700C64F36 /* MPBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBNavigationController.h; sourceTree = "<group>"; };
 		052AD02723979E3700C64F36 /* MPBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPBViewController.h; sourceTree = "<group>"; };
@@ -125,9 +146,16 @@
 		053DC120239FC45000CE06A0 /* HYSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSelectView.m; sourceTree = "<group>"; };
 		053DC121239FC45100CE06A0 /* HYCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCaptureManager.h; sourceTree = "<group>"; };
 		053DC122239FC45100CE06A0 /* UIFont+JZBNFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JZBNFont.h"; sourceTree = "<group>"; };
+		05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "AVFoundation基础概念.rtfd"; sourceTree = SOURCE_ROOT; };
 		05536C9123AC7CC600CB5F51 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		05536C9323AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTextureBlendingRender.h; sourceTree = "<group>"; };
 		05536C9423AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTextureBlendingRender.m; sourceTree = "<group>"; };
+		055B217124C70E0A00532308 /* HYCodeScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYCodeScanVC.m; sourceTree = "<group>"; };
+		055B217224C70E0A00532308 /* HYCodeScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCodeScanVC.h; sourceTree = "<group>"; };
+		056A76C724BD5C1C00483BB3 /* HYGradeSelectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYGradeSelectModel.h; sourceTree = "<group>"; };
+		056A76C824BD5C1C00483BB3 /* HYGradeSelectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYGradeSelectModel.m; sourceTree = "<group>"; };
+		056A76CA24BDACE400483BB3 /* UIFont+JZBNFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JZBNFont.h"; sourceTree = "<group>"; };
+		056A76CB24BDACE400483BB3 /* UIFont+JZBNFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JZBNFont.m"; sourceTree = "<group>"; };
 		056B5BC1249CAC9C000E09B4 /* AVAssetWriteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAssetWriteManager.m; sourceTree = "<group>"; };
 		056B5BC2249CAC9C000E09B4 /* AVAssetWriteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAssetWriteManager.h; sourceTree = "<group>"; };
 		056B5BC4249CACC5000E09B4 /* XCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCFileManager.h; sourceTree = "<group>"; };
@@ -156,6 +184,11 @@
 		057EEA25239D3D4400828DB0 /* MPTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPTViewController.m; sourceTree = "<group>"; };
 		057EEA36239D420E00828DB0 /* MPFCaptureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPFCaptureVC.h; sourceTree = "<group>"; };
 		057EEA37239D420E00828DB0 /* MPFCaptureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPFCaptureVC.m; sourceTree = "<group>"; };
+		05808A3C24BC35BB0088D9B8 /* HYBottomShowSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBottomShowSelectView.h; sourceTree = "<group>"; };
+		05808A3D24BC35BB0088D9B8 /* HYBottomShowSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBottomShowSelectView.m; sourceTree = "<group>"; };
+		05808A4024BC5C8F0088D9B8 /* grade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grade.txt; sourceTree = "<group>"; };
+		058C505324C82E530013F1CC /* HYAVFoundationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYAVFoundationVC.h; sourceTree = "<group>"; };
+		058C505424C82E530013F1CC /* HYAVFoundationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYAVFoundationVC.m; sourceTree = "<group>"; };
 		059161722498F62800345F80 /* MutableCopyCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableCopyCategory.m; sourceTree = "<group>"; };
 		059161732498F62800345F80 /* MutableCopyCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableCopyCategory.h; sourceTree = "<group>"; };
 		05A7444424A740420060BE9A /* EnumerationHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumerationHeader.h; sourceTree = "<group>"; };
@@ -272,9 +305,23 @@
 			path = "音乐播放器";
 			sourceTree = "<group>";
 		};
+		051377B424C690F70056983C /* HYCodeScan */ = {
+			isa = PBXGroup;
+			children = (
+				051377B724C6913A0056983C /* WSLNativeScanTool.h */,
+				051377B624C6913A0056983C /* WSLNativeScanTool.m */,
+				051377B524C6913A0056983C /* WSLScanView.h */,
+				051377B824C6913A0056983C /* WSLScanView.m */,
+			);
+			path = HYCodeScan;
+			sourceTree = "<group>";
+		};
 		052AD02123979E3700C64F36 /* HYCommon */ = {
 			isa = PBXGroup;
 			children = (
+				058C505224C82E060013F1CC /* HYAVFoundationFiles */,
+				051377B424C690F70056983C /* HYCodeScan */,
+				05808A3B24BC35BB0088D9B8 /* HYCommonViewFiles */,
 				057EE9CC239D355200828DB0 /* MPFCustomTabbarFiles */,
 				052AD02223979E3700C64F36 /* MPFBaseFiles */,
 			);
@@ -324,8 +371,6 @@
 		053DC10A239FC41500CE06A0 /* HYCameraFiles */ = {
 			isa = PBXGroup;
 			children = (
-				05A95A022499C986008A28CA /* AVFoundation */,
-				059161782498F93500345F80 /* 可变数组和字典转化 */,
 				053DC121239FC45100CE06A0 /* HYCaptureManager.h */,
 				053DC11B239FC45000CE06A0 /* HYCaptureManager.m */,
 				056B5BC2249CAC9C000E09B4 /* AVAssetWriteManager.h */,
@@ -378,6 +423,15 @@
 			path = HYScrollViewWeb;
 			sourceTree = "<group>";
 		};
+		055B217024C70DF900532308 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				055B217224C70E0A00532308 /* HYCodeScanVC.h */,
+				055B217124C70E0A00532308 /* HYCodeScanVC.m */,
+			);
+			path = "二维码";
+			sourceTree = "<group>";
+		};
 		057EE9CB239D343800828DB0 /* HYFunctions */ = {
 			isa = PBXGroup;
 			children = (
@@ -415,23 +469,56 @@
 			path = MPFCustomTabbarFiles;
 			sourceTree = "<group>";
 		};
+		05808A3B24BC35BB0088D9B8 /* HYCommonViewFiles */ = {
+			isa = PBXGroup;
+			children = (
+				05808A3C24BC35BB0088D9B8 /* HYBottomShowSelectView.h */,
+				05808A3D24BC35BB0088D9B8 /* HYBottomShowSelectView.m */,
+				056A76C724BD5C1C00483BB3 /* HYGradeSelectModel.h */,
+				056A76C824BD5C1C00483BB3 /* HYGradeSelectModel.m */,
+			);
+			path = HYCommonViewFiles;
+			sourceTree = "<group>";
+		};
+		058C505024C820E90013F1CC /* HYCommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				059161782498F93500345F80 /* 可变数组和字典转化 */,
+			);
+			path = HYCommonTools;
+			sourceTree = "<group>";
+		};
+		058C505224C82E060013F1CC /* HYAVFoundationFiles */ = {
+			isa = PBXGroup;
+			children = (
+				05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */,
+				058C505624C82E600013F1CC /* 语音播放 */,
+				058C505324C82E530013F1CC /* HYAVFoundationVC.h */,
+				058C505424C82E530013F1CC /* HYAVFoundationVC.m */,
+				055B217024C70DF900532308 /* 二维码 */,
+				050131B424A845C3007D5059 /* 音乐播放器 */,
+			);
+			path = HYAVFoundationFiles;
+			sourceTree = "<group>";
+		};
+		058C505624C82E600013F1CC /* 语音播放 */ = {
+			isa = PBXGroup;
+			children = (
+				05A95A032499C99E008A28CA /* LFSpeechViewController.h */,
+				05A95A042499C99E008A28CA /* LFSpeechViewController.m */,
+			);
+			path = "语音播放";
+			sourceTree = "<group>";
+		};
 		059161782498F93500345F80 /* 可变数组和字典转化 */ = {
 			isa = PBXGroup;
 			children = (
+				056A76CA24BDACE400483BB3 /* UIFont+JZBNFont.h */,
+				056A76CB24BDACE400483BB3 /* UIFont+JZBNFont.m */,
 				059161732498F62800345F80 /* MutableCopyCategory.h */,
 				059161722498F62800345F80 /* MutableCopyCategory.m */,
 			);
 			path = "可变数组和字典转化";
-			sourceTree = "<group>";
-		};
-		05A95A022499C986008A28CA /* AVFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				050131B424A845C3007D5059 /* 音乐播放器 */,
-				05A95A032499C99E008A28CA /* LFSpeechViewController.h */,
-				05A95A042499C99E008A28CA /* LFSpeechViewController.m */,
-			);
-			path = AVFoundation;
 			sourceTree = "<group>";
 		};
 		05ADF3762043F4FB00CCECA2 = {
@@ -515,6 +602,11 @@
 		05C4841D23AB6C1B00721611 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				051377AC24C690B60056983C /* piao.png */,
+				051377AF24C690B70056983C /* scanFlashlight@2x.png */,
+				051377AE24C690B70056983C /* scanFlashlight@3x.png */,
+				051377AD24C690B60056983C /* scanLine@2x.png */,
+				05808A4024BC5C8F0088D9B8 /* grade.txt */,
 				05536C9123AC7CC600CB5F51 /* 3.png */,
 				05C4841F23AB6C2300721611 /* 2.jpg */,
 				05C4841E23AB6C2300721611 /* 1.jpg */,
@@ -539,6 +631,7 @@
 		05F589AF249A4D87007011C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				058C505024C820E90013F1CC /* HYCommonTools */,
 				05F589B0249A4D87007011C1 /* MPTObject.m */,
 				05F589B1249A4D87007011C1 /* MPBTools.h */,
 				05F589B2249A4D87007011C1 /* NSObject+Tools.h */,
@@ -694,11 +787,17 @@
 			files = (
 				05C4842123AB6C2300721611 /* 2.jpg in Resources */,
 				05ADF38F2043F4FB00CCECA2 /* LaunchScreen.storyboard in Resources */,
+				051377B024C690B70056983C /* piao.png in Resources */,
+				05531AEF24C9344A00D2419C /* AVFoundation基础概念.rtfd in Resources */,
+				051377B124C690B70056983C /* scanLine@2x.png in Resources */,
+				05808A4124BC5C8F0088D9B8 /* grade.txt in Resources */,
+				051377B324C690B70056983C /* scanFlashlight@2x.png in Resources */,
 				05ADF38C2043F4FB00CCECA2 /* Assets.xcassets in Resources */,
 				05ADF3B52043F67C00CCECA2 /* Podfile in Resources */,
 				05ADF38A2043F4FB00CCECA2 /* Main.storyboard in Resources */,
 				05536C9223AC7CC600CB5F51 /* 3.png in Resources */,
 				05C4842023AB6C2300721611 /* 1.jpg in Resources */,
+				051377B224C690B70056983C /* scanFlashlight@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +866,7 @@
 				05C4841823AB6B8100721611 /* OpenGLTextureRender.m in Sources */,
 				059161742498F62800345F80 /* MutableCopyCategory.m in Sources */,
 				057EEA11239D3ACF00828DB0 /* MPFIMChatListMainVC.m in Sources */,
+				05808A3F24BC35BB0088D9B8 /* HYBottomShowSelectView.m in Sources */,
 				05ADF3872043F4FB00CCECA2 /* ViewController.m in Sources */,
 				05F589CC249A4D88007011C1 /* NSObject+Tools.m in Sources */,
 				057EE9D5239D356200828DB0 /* TPCTabBarController.m in Sources */,
@@ -782,6 +882,7 @@
 				056D62492498A6A6007BA6A3 /* HYPasterView.m in Sources */,
 				05C4841523AB6B7700721611 /* OpenGLTexture.mm in Sources */,
 				057EEA20239D3C2600828DB0 /* MPFHomeVC.m in Sources */,
+				058C505524C82E530013F1CC /* HYAVFoundationVC.m in Sources */,
 				053DC123239FC45100CE06A0 /* UIFont+JZBNFont.m in Sources */,
 				05536C9523AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m in Sources */,
 				057EEA1D239D3B2F00828DB0 /* MPFProfileVC.m in Sources */,
@@ -794,6 +895,7 @@
 				057EEA26239D3D4400828DB0 /* MPTViewController.m in Sources */,
 				05F589CA249A4D88007011C1 /* MPCView.m in Sources */,
 				053DC127239FC45100CE06A0 /* HYSelectView.m in Sources */,
+				051377B924C6913A0056983C /* WSLNativeScanTool.m in Sources */,
 				057EE9D3239D356200828DB0 /* TPCTabBarItem.m in Sources */,
 				05D7C2F524738D9500610530 /* OriginImageView.m in Sources */,
 				05F589CE249A4D88007011C1 /* MPCScrollView.m in Sources */,
@@ -802,8 +904,10 @@
 				053DC117239FC44400CE06A0 /* HYResultView.m in Sources */,
 				053DC110239FC43D00CE06A0 /* HYImageHandleVC.m in Sources */,
 				056B5BC3249CAC9C000E09B4 /* AVAssetWriteManager.m in Sources */,
+				055B217324C70E0A00532308 /* HYCodeScanVC.m in Sources */,
 				05D7C2F824738DCE00610530 /* ScaleView.m in Sources */,
 				057EE9D4239D356200828DB0 /* TPCTabBar.m in Sources */,
+				051377BA24C6913A0056983C /* WSLScanView.m in Sources */,
 				050131B724A84648007D5059 /* AVAudioPlayerVC.m in Sources */,
 				05F589D1249A4D88007011C1 /* UIColor+Tools.m in Sources */,
 				05EC907B2044026B0086FB45 /* RootTabBarViewController.m in Sources */,
@@ -818,7 +922,9 @@
 				05F589C7249A4D88007011C1 /* MPTObject.m in Sources */,
 				053D5D7E23AA1E78004E23C0 /* OpenGLView.m in Sources */,
 				05F589CD249A4D88007011C1 /* MPTValidObject.m in Sources */,
+				056A76C924BD5C1C00483BB3 /* HYGradeSelectModel.m in Sources */,
 				05F589D0249A4D88007011C1 /* QAIMNavigaionView.m in Sources */,
+				056A76CC24BDACE400483BB3 /* UIFont+JZBNFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
