@@ -51,20 +51,23 @@
 #pragma mark - private method
 - (void)setUpInitWithType:(FMVideoViewType )type
 {
-    switch (type) {
-        case Type1X1:
-            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenW);
-            break;
-        case Type4X3:
-            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenW*4/3);
-            break;
-        case TypeFullScreen:
-            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenH);
-            break;
-        default:
-            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenW);
-            break;
-    }
+//    switch (type) {
+//        case Type1X1:
+//            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenW);
+//            break;
+//        case Type4X3:
+//            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenW*4/3);
+//            break;
+//        case TypeFullScreen:
+//            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenH);
+//            break;
+//        default:
+//            _outputSize = CGSizeMake(MPT_ScreenW, MPT_ScreenW);
+//            break;
+//    }
+//
+    
+    _outputSize = CGSizeMake(ceil(MPT_ScreenW / 16) * 16, ceil(MPT_ScreenH / 16) * 16);
     _writeQueue = dispatch_queue_create("com.5miles", DISPATCH_QUEUE_SERIAL);
     _recordTime = 0;
     
@@ -95,9 +98,7 @@
             NSLog(@"not ready yet");
             return;
         }
-    }
-    
-    
+    }    
     
     CFRetain(sampleBuffer);
     dispatch_async(self.writeQueue, ^{

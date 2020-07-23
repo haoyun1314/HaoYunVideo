@@ -29,6 +29,7 @@
 		053DC126239FC45100CE06A0 /* JZBAccessPermissionManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC11E239FC45000CE06A0 /* JZBAccessPermissionManger.m */; };
 		053DC127239FC45100CE06A0 /* HYSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC120239FC45000CE06A0 /* HYSelectView.m */; };
 		05531AEF24C9344A00D2419C /* AVFoundation基础概念.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */; };
+		05531AF124C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 05531AF024C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd */; };
 		05536C9223AC7CC600CB5F51 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 05536C9123AC7CC600CB5F51 /* 3.png */; };
 		05536C9523AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 05536C9423AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m */; };
 		055B217324C70E0A00532308 /* HYCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 055B217124C70E0A00532308 /* HYCodeScanVC.m */; };
@@ -147,6 +148,7 @@
 		053DC121239FC45100CE06A0 /* HYCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCaptureManager.h; sourceTree = "<group>"; };
 		053DC122239FC45100CE06A0 /* UIFont+JZBNFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JZBNFont.h"; sourceTree = "<group>"; };
 		05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "AVFoundation基础概念.rtfd"; sourceTree = SOURCE_ROOT; };
+		05531AF024C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "AVPlayer-绿色边框处理.rtfd"; sourceTree = "<group>"; };
 		05536C9123AC7CC600CB5F51 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		05536C9323AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLTextureBlendingRender.h; sourceTree = "<group>"; };
 		05536C9423AC7CEA00CB5F51 /* OpenGLTextureBlendingRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLTextureBlendingRender.m; sourceTree = "<group>"; };
@@ -491,6 +493,7 @@
 		058C505224C82E060013F1CC /* HYAVFoundationFiles */ = {
 			isa = PBXGroup;
 			children = (
+				05531AF024C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd */,
 				05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */,
 				058C505624C82E600013F1CC /* 语音播放 */,
 				058C505324C82E530013F1CC /* HYAVFoundationVC.h */,
@@ -786,6 +789,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C4842123AB6C2300721611 /* 2.jpg in Resources */,
+				05531AF124C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd in Resources */,
 				05ADF38F2043F4FB00CCECA2 /* LaunchScreen.storyboard in Resources */,
 				051377B024C690B70056983C /* piao.png in Resources */,
 				05531AEF24C9344A00D2419C /* AVFoundation基础概念.rtfd in Resources */,
