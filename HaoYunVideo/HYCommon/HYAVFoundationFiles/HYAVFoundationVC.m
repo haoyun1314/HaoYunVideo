@@ -8,6 +8,7 @@
 
 #import "HYAVFoundationVC.h"
 #import "HYCodeScanVC.h"
+#import "HYFilterCamerVC.h"
 
 @interface HYAVFoundationVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -103,8 +104,8 @@
    
     if ([currentSelectName isEqualToString:@"AVFoundation基础概念"])
     {
-//         * foundationVC = [[HYCodeScanVC alloc]init];
-//        [self.navigationController pushViewController:foundationVC animated:YES];
+        HYFilterCamerVC  * foundationVC = [[HYFilterCamerVC alloc]init];
+        [self.navigationController pushViewController:foundationVC animated:YES];
     }
     
    if ([currentSelectName isEqualToString:@"AVFoundation 原生二维码扫描识别和生成"])
@@ -112,6 +113,9 @@
           HYCodeScanVC * foundationVC = [[HYCodeScanVC alloc]init];
           [self.navigationController pushViewController:foundationVC animated:YES];
       }
+    
+    
+    
 }
 
 

@@ -28,6 +28,7 @@
 		053DC125239FC45100CE06A0 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC11D239FC45000CE06A0 /* UIColor+Hex.m */; };
 		053DC126239FC45100CE06A0 /* JZBAccessPermissionManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC11E239FC45000CE06A0 /* JZBAccessPermissionManger.m */; };
 		053DC127239FC45100CE06A0 /* HYSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 053DC120239FC45000CE06A0 /* HYSelectView.m */; };
+		0540E8AF24CAE566004D984D /* HYFilterCamerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540E8AE24CAE566004D984D /* HYFilterCamerVC.m */; };
 		05531AEF24C9344A00D2419C /* AVFoundation基础概念.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */; };
 		05531AF124C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 05531AF024C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd */; };
 		05536C9223AC7CC600CB5F51 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 05536C9123AC7CC600CB5F51 /* 3.png */; };
@@ -49,6 +50,7 @@
 		057EEA20239D3C2600828DB0 /* MPFHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EEA1F239D3C2600828DB0 /* MPFHomeVC.m */; };
 		057EEA26239D3D4400828DB0 /* MPTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EEA25239D3D4400828DB0 /* MPTViewController.m */; };
 		057EEA38239D420E00828DB0 /* MPFCaptureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 057EEA37239D420E00828DB0 /* MPFCaptureVC.m */; };
+		0580713524C9878D003E0177 /* iOS技术知识.png in Resources */ = {isa = PBXBuildFile; fileRef = 0580713424C9878C003E0177 /* iOS技术知识.png */; };
 		05808A3F24BC35BB0088D9B8 /* HYBottomShowSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05808A3D24BC35BB0088D9B8 /* HYBottomShowSelectView.m */; };
 		05808A4124BC5C8F0088D9B8 /* grade.txt in Resources */ = {isa = PBXBuildFile; fileRef = 05808A4024BC5C8F0088D9B8 /* grade.txt */; };
 		058C505524C82E530013F1CC /* HYAVFoundationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 058C505424C82E530013F1CC /* HYAVFoundationVC.m */; };
@@ -147,6 +149,8 @@
 		053DC120239FC45000CE06A0 /* HYSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSelectView.m; sourceTree = "<group>"; };
 		053DC121239FC45100CE06A0 /* HYCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYCaptureManager.h; sourceTree = "<group>"; };
 		053DC122239FC45100CE06A0 /* UIFont+JZBNFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+JZBNFont.h"; sourceTree = "<group>"; };
+		0540E8AD24CAE566004D984D /* HYFilterCamerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HYFilterCamerVC.h; sourceTree = "<group>"; };
+		0540E8AE24CAE566004D984D /* HYFilterCamerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYFilterCamerVC.m; sourceTree = "<group>"; };
 		05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "AVFoundation基础概念.rtfd"; sourceTree = SOURCE_ROOT; };
 		05531AF024C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "AVPlayer-绿色边框处理.rtfd"; sourceTree = "<group>"; };
 		05536C9123AC7CC600CB5F51 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 		057EEA25239D3D4400828DB0 /* MPTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPTViewController.m; sourceTree = "<group>"; };
 		057EEA36239D420E00828DB0 /* MPFCaptureVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPFCaptureVC.h; sourceTree = "<group>"; };
 		057EEA37239D420E00828DB0 /* MPFCaptureVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPFCaptureVC.m; sourceTree = "<group>"; };
+		0580713424C9878C003E0177 /* iOS技术知识.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS技术知识.png"; sourceTree = "<group>"; };
 		05808A3C24BC35BB0088D9B8 /* HYBottomShowSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBottomShowSelectView.h; sourceTree = "<group>"; };
 		05808A3D24BC35BB0088D9B8 /* HYBottomShowSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBottomShowSelectView.m; sourceTree = "<group>"; };
 		05808A4024BC5C8F0088D9B8 /* grade.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grade.txt; sourceTree = "<group>"; };
@@ -418,6 +423,13 @@
 			path = CaptureMainView;
 			sourceTree = "<group>";
 		};
+		0540E8AC24CAE1CA004D984D /* HYAVMangerFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HYAVMangerFiles;
+			sourceTree = "<group>";
+		};
 		0556F93024596F6C006A4927 /* HYScrollViewWeb */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,11 +505,14 @@
 		058C505224C82E060013F1CC /* HYAVFoundationFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0540E8AC24CAE1CA004D984D /* HYAVMangerFiles */,
+				058C505324C82E530013F1CC /* HYAVFoundationVC.h */,
+				058C505424C82E530013F1CC /* HYAVFoundationVC.m */,
+				0540E8AD24CAE566004D984D /* HYFilterCamerVC.h */,
+				0540E8AE24CAE566004D984D /* HYFilterCamerVC.m */,
 				05531AF024C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd */,
 				05531AEE24C9344A00D2419C /* AVFoundation基础概念.rtfd */,
 				058C505624C82E600013F1CC /* 语音播放 */,
-				058C505324C82E530013F1CC /* HYAVFoundationVC.h */,
-				058C505424C82E530013F1CC /* HYAVFoundationVC.m */,
 				055B217024C70DF900532308 /* 二维码 */,
 				050131B424A845C3007D5059 /* 音乐播放器 */,
 			);
@@ -527,6 +542,7 @@
 		05ADF3762043F4FB00CCECA2 = {
 			isa = PBXGroup;
 			children = (
+				0580713424C9878C003E0177 /* iOS技术知识.png */,
 				05ADF3B42043F67C00CCECA2 /* Podfile */,
 				05ADF3812043F4FB00CCECA2 /* HaoYunVideo */,
 				05ADF39A2043F4FB00CCECA2 /* HaoYunVideoTests */,
@@ -791,6 +807,7 @@
 				05C4842123AB6C2300721611 /* 2.jpg in Resources */,
 				05531AF124C93B5300D2419C /* AVPlayer-绿色边框处理.rtfd in Resources */,
 				05ADF38F2043F4FB00CCECA2 /* LaunchScreen.storyboard in Resources */,
+				0580713524C9878D003E0177 /* iOS技术知识.png in Resources */,
 				051377B024C690B70056983C /* piao.png in Resources */,
 				05531AEF24C9344A00D2419C /* AVFoundation基础概念.rtfd in Resources */,
 				051377B124C690B70056983C /* scanLine@2x.png in Resources */,
@@ -897,6 +914,7 @@
 				05F589CF249A4D88007011C1 /* UIView+Tools.m in Sources */,
 				05D99E8923ABBD480068C4DE /* OpenGLSimpleRender.m in Sources */,
 				057EEA26239D3D4400828DB0 /* MPTViewController.m in Sources */,
+				0540E8AF24CAE566004D984D /* HYFilterCamerVC.m in Sources */,
 				05F589CA249A4D88007011C1 /* MPCView.m in Sources */,
 				053DC127239FC45100CE06A0 /* HYSelectView.m in Sources */,
 				051377B924C6913A0056983C /* WSLNativeScanTool.m in Sources */,

@@ -204,6 +204,7 @@
 //设置写入视频属性
 - (void)setUpWriter
 {
+//    AVAssetWriter 可以将媒体数据 CMSampleBuffer 写入指定的文件
     self.assetWriter = [AVAssetWriter assetWriterWithURL:self.videoUrl fileType:AVFileTypeMPEG4 error:nil];
     
 

@@ -31,17 +31,6 @@ AVCapturePhotoCaptureDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,AVAss
 @end
 
 @implementation HYCaptureManager
-
-#pragma mark -
-#pragma mark configure
-- (id)init {
-    if (self = [super init]) {
-        _scaleNum = 1.f;
-        _preScaleNum = 1.f;
-    }
-    return self;
-}
-
 - (void)dealloc {
     
     NSLog(@"HYCaptureManager");
@@ -58,6 +47,17 @@ AVCapturePhotoCaptureDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,AVAss
         self.stillImageOutput = nil;
     }
 }
+
+#pragma mark -
+#pragma mark configure
+- (id)init {
+    if (self = [super init]) {
+        _scaleNum = 1.f;
+        _preScaleNum = 1.f;
+    }
+    return self;
+}
+
 
 - (void)configureWithParentLayer:(UIView *)parent
                      previewRect:(CGRect)preivewRect
@@ -121,7 +121,7 @@ AVCapturePhotoCaptureDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,AVAss
 }
 
 /**
- *  session
+ *  session---
  */
 - (void)addSession
 {
@@ -169,21 +169,50 @@ AVCapturePhotoCaptureDelegate,AVCaptureAudioDataOutputSampleBufferDelegate,AVAss
     NSArray *devices = [AVCaptureDevice devices];
     AVCaptureDevice *backCamera = nil;
     
-    //获取前置或者后置摄行头
-    for (AVCaptureDevice *device in devices)
+    if (@available(iOS 10.2, *)) {
+        
+        if (front) {
+            
+        }
+//           AVCaptureDeviceDiscoverySession *dissession = [AVCaptureDeviceDiscoverySession discoverySessionWithDeviceTypes:@[AVCaptureDeviceTypeBuiltInDualCamera,AVCaptureDeviceTypeBuiltInTelephotoCamera,AVCaptureDeviceTypeBuiltInWideAngleCamera] mediaType:AVMediaTypeVideo position:positon];
+        
+        
+//           for (AVCaptureDevice *device in dissession.devices) {
+//               if ([device position] == positon) {
+//                   backCamera = device
+//                   return device;
+//               }
+//           }
+        
+        
+        
+       }
+    else
     {
-        if ([device hasMediaType:AVMediaTypeVideo])
+        //获取前置或者后置摄行头
+        for (AVCaptureDevice *device in devices)
         {
-            if ([device position] == AVCaptureDevicePositionBack && !front)
+            if ([device hasMediaType:AVMediaTypeVideo])
             {
-                backCamera = device;
-                break;
-            } else if ([device position] == AVCaptureDevicePositionFront && front) {
-                backCamera = device;
-                break;
+                if ([device position] == AVCaptureDevicePositionBack && !front)
+                {
+                    backCamera = device;
+                    break;
+                } else if ([device position] == AVCaptureDevicePositionFront && front) {
+                    backCamera = device;
+                    break;
+                }
             }
         }
+        
     }
+    
+    
+
+    
+    
+    
+    
         
     //向session添加输入设备
     NSError *error = nil;
@@ -777,68 +806,6 @@ didFinishProcessingPhoto:(AVCapturePhoto *)photo
 
 #pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate----AVCaptureAudioDataOutputSampleBufferDelegate----
 
-//写入视频
-- (void)setUpWriter
-{
-    self.videoUrl = [[NSURL alloc] initFileURLWithPath:[self createVideoFilePath]];
-    self.writeManager = [[AVAssetWriteManager alloc] initWithURL:self.videoUrl viewType:TypeFullScreen];
-    self.writeManager.delegate = self;
-    
-}
-
-
-- (void)startRecord
-{
-    if (self.recordState == FMRecordStateInit) {
-        [self.writeManager startWrite];
-        self.recordState = FMRecordStateRecording;
-    }
-}
-
-- (void)stopRecord
-{
-    [self.writeManager stopWrite];
-    [self.session stopRunning];
-    self.recordState = FMRecordStateFinish;
-    
-}
-
-- (void)reset
-{
-    self.recordState = FMRecordStateInit;
-    [self.session startRunning];
-    [self setUpWriter];
-    
-}
-
-
-
-//写入的视频路径
-- (NSString *)createVideoFilePath
-{
-    NSString *videoName = [NSString stringWithFormat:@"%@.mp4", [NSUUID UUID].UUIDString];
-    NSString *path = [[self videoFolder] stringByAppendingPathComponent:videoName];
-    return path;
-}
-
-
-//存放视频的文件夹
-- (NSString *)videoFolder
-{
-    NSString *cacheDir = [XCFileManager cachesDir];
-    NSString *direc = [cacheDir stringByAppendingPathComponent:VIDEO_FOLDER];
-    if (![XCFileManager isExistsAtPath:direc]) {
-        [XCFileManager createDirectoryAtPath:direc];
-    }
-    return direc;
-}
-//清空文件夹
-- (void)clearFile
-{
-    [XCFileManager removeItemAtPath:[self videoFolder]];
-    
-}
-
 /**
 //TODO:AVCaptureVideoDataOutputSampleBufferDelegate
 每当AVCaptureVideoDataOutput实例输出新的视频帧时调用
@@ -896,5 +863,71 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     
     
 }
+
+
+
+#pragma mark--写入沙盒
+
+//写入视频
+- (void)setUpWriter
+{
+    self.videoUrl = [[NSURL alloc] initFileURLWithPath:[self createVideoFilePath]];
+    self.writeManager = [[AVAssetWriteManager alloc] initWithURL:self.videoUrl viewType:TypeFullScreen];
+    self.writeManager.delegate = self;
+    
+}
+
+
+- (void)startRecord
+{
+    if (self.recordState == FMRecordStateInit) {
+        [self.writeManager startWrite];
+        self.recordState = FMRecordStateRecording;
+    }
+}
+
+- (void)stopRecord
+{
+    [self.writeManager stopWrite];
+    [self.session stopRunning];
+    self.recordState = FMRecordStateFinish;
+    
+}
+
+- (void)reset
+{
+    self.recordState = FMRecordStateInit;
+    [self.session startRunning];
+    [self setUpWriter];
+}
+
+
+
+//写入的视频路径
+- (NSString *)createVideoFilePath
+{
+    NSString *videoName = [NSString stringWithFormat:@"%@.mp4", [NSUUID UUID].UUIDString];
+    NSString *path = [[self videoFolder] stringByAppendingPathComponent:videoName];
+    return path;
+}
+
+
+//存放视频的文件夹
+- (NSString *)videoFolder
+{
+    NSString *cacheDir = [XCFileManager cachesDir];
+    NSString *direc = [cacheDir stringByAppendingPathComponent:VIDEO_FOLDER];
+    if (![XCFileManager isExistsAtPath:direc]) {
+        [XCFileManager createDirectoryAtPath:direc];
+    }
+    return direc;
+}
+//清空文件夹
+- (void)clearFile
+{
+    [XCFileManager removeItemAtPath:[self videoFolder]];
+    
+}
+
 
 @end
